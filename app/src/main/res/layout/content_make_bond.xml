@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_make_bond"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.jlabs.famb.MakeBond"
+    tools:showIn="@layout/app_bar_make_bond">
+
+    <FrameLayout
+        android:id="@+id/fragmentHolder"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="56dp"
+        android:layout_height="match_parent"
+        android:layout_weight="100">
+
+    <co.jlabs.famb.chatBox.NonSwipeableViewPager
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"
+        />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="56dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab1"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabTextColor="#AFAFAF"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabIndicatorColor="#00ffffff"
+            app:tabGravity="fill"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/tabA"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:layout_weight="33"-->
+            <!--android:padding="10dp"-->
+            <!--android:src="@drawable/fambond_white"-->
+            <!--android:text="TAB A"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/tabB"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:layout_weight="33"-->
+            <!--android:padding="10dp"-->
+            <!--android:src="@drawable/feeds"-->
+            <!--android:text="TAB B"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/tabC"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:layout_weight="33"-->
+            <!--android:padding="10dp"-->
+            <!--android:src="@drawable/contacts"-->
+            <!--android:text="TAB C"/>-->
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MaterialCalendarView">
+        <attr name="calendarBackgroundColor" format="color"/>
+        <attr name="calendarButtonBackgroundColor" format="color"/>
+        <attr name="calendarBackButtonDrawable" format="reference"/>
+        <attr name="calendarNextButtonDrawable" format="reference"/>
+        <attr name="calendarSelectedDayBackgroundColor" format="color"/>
+        <attr name="calendarCurrentDayBackgroundColor" format="color"/>
+        <attr name="calendarDisabledDayBackgroundColor" format="color"/>
+        <attr name="calendarWeekBackgroundColor" format="color" />
+        <attr name="calendarTitleBackgroundColor" format="color" />
+        <attr name="calendarTitleTextColor" format="color" />
+        <attr name="calendarDayOfWeekTextColor" format="color" />
+        <attr name="calendarDisabledDayTextColor" format="color" />
+        <attr name="calendarSelectedDayTextColor" format="color" />
+        <attr name="calendarWeekendTextColor" format="color"/>
+        <attr name="calendarCurrentDayTextColor" format="color" />
+        <attr name="calendarIsOverflowDatesVisible" format="boolean"/>
+        <attr name="calendarIsMultiSelectDayEnabled" format="boolean"/>
+        <attr name="calendarWeekendDays">
+            <flag name="sunday" value="1"/>
+            <flag name="monday" value="2"/>
+            <flag name="tuesday" value="4"/>
+            <flag name="wednesday" value="8"/>
+            <flag name="thursday" value="16"/>
+            <flag name="friday" value="32"/>
+            <flag name="saturday" value="64"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircularImageView">
+        <attr name="civ_border" format="boolean"/>
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_shadow" format="boolean"/>
+        <attr name="civ_shadow_color" format="color"/>
+        <attr name="civ_shadow_radius" format="float"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleCheckBox">
+        <attr name="animation_duration" format="integer"/>
+        <attr name="tick_width" format="dimension"/>
+        <attr name="border_width" format="dimension"/>
+        <attr name="tick_color" format="color"/>
+        <attr name="border_color" format="color"/>
+        <attr name="background_color" format="color"/>
+    </declare-styleable>
+
+
+    <!--Chat Box attribs-->
+
+    <declare-styleable name="ChatMessageView">
+        <attr name="cmv_showArrow" format="boolean" />
+        <attr name="cmv_arrowPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="cmv_arrowGravity" format="enum">
+            <enum name="start" value="0" />
+            <enum name="center" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+        <attr name="cmv_backgroundColor" format="color" />
+        <attr name="cmv_backgroundColorPressed" format="color" />
+        <attr name="cmv_cornerRadius" format="dimension" />
+        <attr name="cmv_contentPadding" format="dimension" />
+        <attr name="cmv_arrowMargin" format="dimension" />
+
+    </declare-styleable>
+
+    <!--Chat Box attribs-->
+</resources>

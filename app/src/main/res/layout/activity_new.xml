@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_ppl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="co.jlabs.famb.NewBond">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/action_bar"
+        android:background="@color/colorPrimaryDark">
+        <ImageView
+           android:layout_width="wrap_content"
+           android:src="@drawable/right_arrow"
+           android:rotation="180"
+           android:paddingTop="15dp"
+           android:id="@+id/back"
+           android:paddingBottom="15dp"
+           android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Bond"
+            android:textSize="19sp"
+            android:layout_toRightOf="@+id/back"
+            android:gravity="center"
+            android:id="@+id/up"
+            android:paddingTop="5dp"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add People"
+            android:id="@+id/ppl_num"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/back"
+            android:gravity="center"
+            android:layout_below="@+id/up"
+            android:textColor="#ffffff"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_search"
+            android:padding="10dp"
+            android:id="@+id/search"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="66dp"
+        android:id="@+id/fab"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/right_arrow"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:background="@color/colorBot"
+        android:layout_margin="15dp"
+        android:layout_height="66dp" />
+</RelativeLayout>

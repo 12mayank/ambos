@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/contentRootVoice"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="300dp">
+
+
+
+    <co.jlabs.famb.fonts.TextView_White
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Timing"
+        android:textColor="#ffffff"/>
+
+
+    <co.jlabs.famb.fonts.ButtonFont
+        android:layout_width="42dp"
+        android:text="@string/mic"
+        android:textSize="18sp"
+        android:id="@+id/voice_btn"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorBot"
+        android:background="@drawable/de"
+        android:layout_height="42dp" />
+</LinearLayout>

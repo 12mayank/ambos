@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+   >
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_height="wrap_content">
+        <co.jlabs.famb.Rounded.CircularImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bonds"
+            app:civ_border_color="#50000000"
+            app:civ_border_width="4dp"
+            android:id="@+id/profile_pic"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingLeft="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/pencil"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please"
+        android:textColor="#fff"
+        android:layout_marginTop="5dp"
+        />
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:id="@+id/name"
+            android:textColor="#ffffff"
+            android:theme="@style/myText"
+            android:layout_marginRight="45dp"
+            android:hint="Name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:id="@+id/ll"
+            android:orientation="horizontal"
+            android:layout_below="@+id/name"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/age"
+                android:textSize="17dp"
+                android:textColor="#ffffff"
+                android:theme="@style/myText"
+                android:layout_weight="1"
+                android:hint="Dob"/>
+
+
+            <Spinner
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="@style/myText"
+                android:layout_marginRight="30dp"
+                >
+
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_below="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/submit_user"
+            android:layout_marginTop="35dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="SUBMIT"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/signup"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:visibility="gone"
+            android:id="@+id/ll2"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/submit_user"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+               android:background="#fff"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textColor="#fff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="45dp"
+               />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@+id/ll2"
+            android:id="@+id/fb"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:text="Facebook"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/loginbut"
+            />
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@+id/fb"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/loginbut"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:text="Google"
+            android:textAllCaps="false"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>
+
+
+<!--<EditText-->
+<!--android:id="@+id/gender"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_weight="1"-->
+<!--android:textColor="#ffffff"-->
+<!--android:theme="@style/myText"-->
+<!--android:hint="Gender"-->
+<!--android:imeOptions="actionDone"-->
+<!--android:singleLine="true"-->
+<!--android:layout_marginRight="45dp"-->
+    <!--/>-->
+
+

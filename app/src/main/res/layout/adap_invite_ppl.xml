@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="80dp">
+    <co.jlabs.famb.Rounded.CircularImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/img_ppl"
+        app:civ_border_color="@color/colorPrimaryDark"
+        android:layout_margin="15dp"
+        android:src="@drawable/coffee"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem Ipsum"
+        android:id="@+id/name_ppl"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/img_ppl"
+        android:layout_toLeftOf="@+id/add"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"/>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:background="@drawable/add_all"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:id="@+id/add"
+        android:textSize="10sp"
+        android:textColor="@color/colorBot"
+        android:layout_alignParentRight="true"
+        android:text="+Add"/>
+
+
+</RelativeLayout>

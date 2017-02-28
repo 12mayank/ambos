@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">FamBond</string>
+    <string name="day_of_week" translatable="false">dayOfWeek</string>
+    <string name="day_of_month_text" translatable="false">dayOfMonthText</string>
+    <string name="day_of_month_container" translatable="false">dayOfMonthContainer</string>
+    <string name="large_text">This is a test app</string>
+
+
+
+    <string name="terms"> <u>Terms of services</u></string>
+    <string name="text2">Carrier SMS charges may apply.</string>
+    <string name="text1">Fambond will send an OTP to confirm your phone number</string>
+    <string name="phone">Phone Number</string>
+    <string name="sit_back">Sit back &amp; relax! While we verify your number.</string>
+    <string name="manually">(or enter manually if it fail to detect automatically)</string>
+    <string name="well">Well, your number has been verified</string>
+    <string name="how">how about setting a username &amp; password?</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="retype">retype</string>
+    <string name="at">\@</string>
+    <string name="please">Please tell us about you</string>
+    <string name="plant1">Lorem Ipsum</string>
+    <string name="plant2">Some Name</string>
+    <string name="plant3">James Bond</string>
+    <string name="name1">Gopal Agrawal</string>
+    <string name="name2">Jatin Garg</string>
+    <string name="name3">Mayank Sharma</string>
+    <string name="regular">Regular sms charges \n may apply</string>
+    <string name="title_activity_make_bond">MakeBond</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="previous">Go to previous</string>
+    <string name="next">Go to next</string>
+
+
+    <string name="settings">Settings</string>
+    <string name="calendar">calendar</string>
+    <string name="bonds">bonds</string>
+    <string name="vault">vault</string>
+    <string name="contacts">contacts</string>
+    <string name="feed">feeds</string>
+    <string name="polls">polls</string>
+    <string name="events">events</string>
+    <string name="tasks">tasks</string>
+    <string name="no_one">Looks like there is no one to talk to \nStart a new bond</string>
+
+
+    <string name="settings1">2</string>
+    <string name="calendar1">89</string>
+    <string name="bonds1">3</string>
+    <string name="vault1">67</string>
+    <string name="contacts1">14</string>
+    <string name="feed1">2</string>
+    <string name="polls1">3</string>
+    <string name="events1">6</string>
+    <string name="tasks1">3</string>
+    <string name="title_activity_chat_box">ChatBox</string>
+
+
+
+    <!--IconFonts-->
+    <string name="add_user">&#xf100;</string>
+    <string name="back">&#xf101;</string>
+    <string name="out">&#xf102;</string>
+    <string name="bubble_msg">&#xf103;</string>
+    <string name="attach">&#xf104;</string>
+    <string name="settin_gears">&#xf105;</string>
+    <string name="text_inp">&#xf106;</string>
+    <string name="gallery">&#xf107;</string>
+    <string name="gif">&#xf108;</string>
+    <string name="smiley">&#xf109;</string>
+    <string name="mic">&#xf10a;</string>
+    <string name="mic_off">&#xf10b;</string>
+    <string name="mute">&#xf10c;</string>
+    <string name="call">&#xf10d;</string>
+    <string name="camera">&#xf10e;</string>
+    <string name="delete">&#xf10f;</string>
+    <string name="send">&#xf110;</string>
+    <string name="setting">&#xf111;</string>
+    <string name="sos">&#xf112;</string>
+    <string name="speaker_on">&#xf113;</string>
+    <string name="call2">&#xf114;</string>
+    <string name="call_dis">&#xf115;</string>
+    <!--IconFonts-->
+
+
+    <!--spinner item-->
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+</resources>

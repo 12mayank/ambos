@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id= "@+id/radioButton"
+    android:padding="10dp"
+    android:clickable="true"
+    android:background="@color/colorPrimary"
+    android:textColor="#FFFFFF"
+    android:layout_height="wrap_content">
+
+
+</RadioButton>
+
+
+
+<!--<co.jlabs.famb.checkBox.CircleCheckBox-->
+<!--android:id="@+id/circle_check_box"-->
+<!--app:tick_width="2dp"-->
+<!--android:visibility="gone"-->
+<!--app:animation_duration="500"-->
+<!--app:border_width="2dp"-->
+<!--app:border_color="@color/colorBot"-->
+<!--android:layout_width="20dp"-->
+<!--android:layout_height="20dp"/>-->
+
+<!--<TextView-->
+<!--android:id="@+id/option_alert"-->
+<!--android:text=" samsung"-->
+<!--android:layout_toRightOf="@+id/circle_check_box"-->
+<!--android:layout_marginLeft="20dp"-->
+<!--android:textSize="15sp"-->
+<!--android:textColor="#ffffff"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content" />-->

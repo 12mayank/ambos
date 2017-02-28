@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp">
+    <co.jlabs.famb.Rounded.CircularImageView
+        android:layout_width="45dp"
+        android:id="@+id/img"
+        android:visibility="gone"
+        android:src="@drawable/kashyap"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_height="45dp" />
+    <co.jlabs.famb.chatBox.ChatMessageView
+        android:id="@+id/chatMessageView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cmv_arrowGravity="start"
+        android:layout_toRightOf="@+id/img"
+        android:layout_marginRight="75dp"
+        android:layout_centerVertical="true"
+        app:cmv_arrowPosition="left"
+        app:cmv_backgroundColor="#81C63A"
+        app:cmv_backgroundColorPressed="#ff00bcd4"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="true">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </co.jlabs.famb.chatBox.ChatMessageView>
+
+    <co.jlabs.famb.chatBox.ChatMessageView
+        android:id="@+id/pollMessageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:cmv_arrowGravity="start"
+        android:layout_toRightOf="@+id/img"
+        android:layout_marginRight="75dp"
+        android:layout_centerVertical="true"
+        app:cmv_arrowPosition="left"
+        app:cmv_backgroundColor="#81C63A"
+        app:cmv_backgroundColorPressed="#ff00bcd4"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="true">
+
+        <TextView
+            android:id= "@+id/subject_poll"
+            android:gravity="center_horizontal"
+            android:text="hiiiiiiiiiiiiiiiiiii"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/note_poll"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="this is the notes"
+            android:layout_below="@+id/subject_poll"/>
+
+        <TextView
+            android:id= "@+id/tv"
+            android:layout_below="@+id/note_poll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 - "/>
+
+        <TextView
+            android:id="@+id/optionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is option"
+            android:layout_below="@+id/note_poll"
+            android:layout_toRightOf="@+id/tv"/>
+
+        <TextView
+            android:id="@+id/poll_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/optionText"
+            android:layout_below="@+id/note_poll"
+            android:layout_marginLeft="3dp"
+            android:text="(0) "
+           />
+        <TextView
+            android:id= "@+id/tv2"
+            android:layout_below="@+id/optionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/optionText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv2"
+            android:text=""
+            android:layout_below="@+id/optionText"/>
+
+        <TextView
+            android:id="@+id/poll_count2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/optionText2"
+            android:layout_below="@+id/optionText"
+            android:layout_marginLeft="3dp"
+            android:text=""
+            />
+
+
+    </co.jlabs.famb.chatBox.ChatMessageView>
+
+</RelativeLayout>

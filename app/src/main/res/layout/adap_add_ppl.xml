@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:id="@+id/cool"
+    android:gravity="center_vertical"
+    android:layout_height="80dp">
+    <co.jlabs.famb.Rounded.CircularImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/img_ppl"
+        app:civ_border_color="@color/colorPrimaryDark"
+        android:layout_margin="15dp"
+        android:src="@drawable/lorem"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem Ipsum"
+        android:id="@+id/name_ppl"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/img_ppl"
+        android:layout_toLeftOf="@+id/add"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"/>
+
+    <co.jlabs.famb.checkBox.CircleCheckBox
+        android:id="@+id/circle_check_box"
+        app:tick_width="2dp"
+        android:visibility="gone"
+        app:animation_duration="500"
+        app:border_width="2dp"
+        app:border_color="@color/colorBot"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#316F89"/>
+</RelativeLayout>

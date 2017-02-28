@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_chat_box"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.jlabs.famb.ChatBox"
+    tools:showIn="@layout/activity_chat_box">
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send_message_layout"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        android:divider="@null"
+       />
+    <RelativeLayout
+        android:id="@+id/send_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:weightSum="5"
+          android:id="@+id/tabs"
+          android:layout_marginRight="35dp"
+          android:layout_height="wrap_content">
+          <co.jlabs.famb.fonts.TextView_White
+              android:layout_width="wrap_content"
+              android:text="@string/text_inp"
+              android:textColor="@drawable/text_color_states"
+              android:gravity="center"
+              android:id="@+id/textF"
+              android:layout_weight="1"
+              android:padding="10dp"
+              android:layout_height="wrap_content" />
+          <co.jlabs.famb.fonts.TextView_White
+              android:layout_width="wrap_content"
+              android:text="@string/gallery"
+              android:textColor="@drawable/text_color_states"
+              android:gravity="center"
+              android:id="@+id/galleryF"
+              android:layout_weight="1"
+              android:padding="10dp"
+              android:layout_height="wrap_content" />
+          <co.jlabs.famb.fonts.TextView_White
+              android:layout_width="wrap_content"
+              android:text="@string/camera"
+              android:id="@+id/cameraF"
+              android:textColor="@drawable/text_color_states"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:padding="10dp"
+              android:layout_height="wrap_content" />
+          <co.jlabs.famb.fonts.TextView_White
+              android:layout_width="wrap_content"
+              android:text="@string/gif"
+              android:id="@+id/giphyF"
+              android:textColor="@drawable/text_color_states"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:padding="10dp"
+              android:layout_height="wrap_content" />
+          <co.jlabs.famb.fonts.TextView_White
+              android:layout_width="wrap_content"
+              android:text="@string/mic"
+              android:id="@+id/voiceF"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:textColor="@drawable/text_color_states"
+              android:padding="10dp"
+              android:layout_height="wrap_content" />
+
+      </LinearLayout>
+        <include    android:layout_below="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chatBox"
+             layout="@layout/fragment_top_rated"/>
+        <include    android:layout_below="@+id/tabs"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:id="@+id/voice_sbtn"
+            android:layout_height="wrap_content"
+            layout="@layout/fragment_voice_rec"/>
+
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

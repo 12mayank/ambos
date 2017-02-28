@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.jlabs.famb">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/fame_logo"
+        android:name=".AppController"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme1">
+        <activity android:name=".Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".boon.apps.view.MainActivity"
+            android:label="Calender"/>
+        <activity android:name=".Prof" />
+        <activity android:name=".activityArea.ChatBox" />
+        <activity android:name=".AddPpl" />
+        <activity
+            android:name=".MakeBond"
+            android:label="@string/title_activity_make_bond"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".NewPoll" />
+        <activity android:name=".NewTask" />
+        <activity android:name=".NewBond">
+
+        </activity>
+
+        <activity android:name=".NewBond2" />
+
+        <activity android:name=".Add_Bond" />
+
+        <activity android:name=".Send_New_Task" />
+
+        <activity android:name=".GroupInfo_Class"/>
+
+    </application>
+
+</manifest>
+
+
+    <!--android:name=".Chat_Application"-->

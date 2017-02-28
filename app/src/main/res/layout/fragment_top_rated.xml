@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:id="@+id/contentRoot"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/de1"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/smiley"
+            android:id="@+id/imgs"
+           android:layout_gravity="center_vertical"
+            android:layout_width="30dp"
+            android:padding="5dp"
+            android:layout_height="30dp"
+            />
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/et_message"
+            android:background="#00000000"
+            emojicon:emojiconSize="28sp"/>
+    </LinearLayout>
+
+
+
+    <co.jlabs.famb.fonts.ButtonFont
+        android:layout_width="42dp"
+        android:text="@string/mic"
+        android:textSize="18sp"
+        android:id="@+id/send"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorBot"
+        android:background="@drawable/de"
+        android:layout_height="42dp" />
+</LinearLayout>

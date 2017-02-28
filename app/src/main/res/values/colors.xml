@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#175E7B</color>
+    <color name="colorPrimaryDark">#14516A</color>
+    <color name="colorAccent1">#f26222</color>
+    <color name="colorBot">#83C341</color>
+    <color name="teal500">#009688</color>
+    <color name="white">#ffffff</color>
+    <color name="off_white">#FAFAFA</color>
+    <color name="background">#E0E0E0</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="blue">#03A7E9</color>
+    <color name="grey">#757575</color>
+    <color name="red">#ed2121</color>
+    <color name="colorAccent">#2dc899</color>
+
+
+    <color name="day_disabled_background_color">#F1F5F8</color>
+    <color name="day_disabled_text_color">#DEDEDE</color>
+    <color name="selected_day_background">#03A7E9</color>
+    <color name="current_day_of_month">#03A7E9</color>
+    <color name="weekend_color">#FF0000</color>
+</resources>

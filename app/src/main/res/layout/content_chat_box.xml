@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_chat_box"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.jlabs.famb.ChatBox"
+    tools:showIn="@layout/activity_chat_box">
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send_message_layout"
+        android:divider="@null"
+       />
+    <RelativeLayout
+        android:id="@+id/send_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_marginRight="29dp"
+            android:layout_height="30dp"
+            app:tabMode="fixed"
+            android:layout_toRightOf="@+id/text1"
+            android:layout_marginBottom="-5dp"
+            app:tabTextColor="#AFAFAF"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabIndicatorColor="#00ffffff"
+            app:tabGravity="fill"/>
+        <co.jlabs.famb.chatBox.NonSwipeableViewPager
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabs"
+            android:id="@+id/viewpager"
+            />
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp">
+
+
+    <co.jlabs.famb.chatBox.ChatMessageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chatMessageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cmv_arrowGravity="start"
+        app:cmv_arrowMargin="3dp"
+        android:layout_centerVertical="true"
+        app:cmv_arrowPosition="right"
+        android:layout_marginLeft="75dp"
+        android:layout_toLeftOf="@+id/img"
+        app:cmv_backgroundColor="#F1F1F1"
+        app:cmv_backgroundColorPressed="#81C63A"
+        app:cmv_contentPadding="10dp"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="true">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+
+    </co.jlabs.famb.chatBox.ChatMessageView>
+    <co.jlabs.famb.Rounded.CircularImageView
+        android:layout_width="45dp"
+        android:id="@+id/img"
+        android:src="@drawable/kashyap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_height="45dp" />
+
+</RelativeLayout>

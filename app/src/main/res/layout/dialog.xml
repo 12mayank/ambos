@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:background="@drawable/dialog_draw"
+    android:layout_width="match_parent"
+    android:layout_margin="25dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:id="@+id/sender"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text="Send invites via"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/whatsapp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/sender"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/whatsapp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:id="@+id/w"
+            android:textSize="13sp"
+            android:layout_margin="5dp"
+            android:text="WhatsApp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="35dp"
+        android:id="@+id/sms"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/sender"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/unnamed"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:layout_margin="5dp"
+            android:text="SMS"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c4c4c4"
+            android:textSize="9sp"
+            android:gravity="center"
+            android:text="@string/regular"/>
+    </LinearLayout>
+
+</RelativeLayout>

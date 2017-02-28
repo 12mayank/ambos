@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context="co.jlabs.famb.ChatBox">
+
+    <include layout="@layout/content_chat_box2" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme1.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/action_bar"
+            android:background="@color/colorPrimaryDark">
+            <co.jlabs.famb.fonts.TextView_White
+                android:layout_width="wrap_content"
+               android:text="@string/back"
+                android:textSize="20sp"
+               android:layout_centerVertical="true"
+                android:paddingTop="10dp"
+                android:id="@+id/back"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content" />
+            <co.jlabs.famb.Rounded.CircularImageView
+                android:layout_width="50dp"
+                android:id="@+id/bond_img"
+                app:civ_border_color="@color/colorPrimary"
+                android:layout_toRightOf="@+id/back"
+                android:layout_centerVertical="true"
+                app:civ_border_width="2dp"
+                android:src="@drawable/coffee"
+                android:layout_height="50dp" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Bond"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/bond_img"
+
+                android:layout_toLeftOf="@+id/call"
+                android:id="@+id/bond_name"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="10sp"
+                android:layout_toLeftOf="@+id/call"
+                android:id="@+id/members"
+                android:paddingLeft="5dp"
+                android:layout_toRightOf="@+id/bond_img"
+
+                android:layout_below="@+id/bond_name"
+                android:textColor="#9FB0B9"/>
+            <co.jlabs.famb.fonts.TextView_White
+                android:layout_width="wrap_content"
+                android:text="@string/setting"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingTop="18dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="5dp"
+                android:id="@+id/settings"
+                android:paddingBottom="18dp"
+                android:layout_height="wrap_content" />
+            <co.jlabs.famb.fonts.TextView_White
+                android:layout_width="wrap_content"
+                android:text="@string/attach"
+                android:layout_centerVertical="true"
+                android:paddingTop="18dp"
+                android:textSize="20sp"
+                android:elevation="5dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_toLeftOf="@+id/settings"
+                android:id="@+id/attachment"
+                android:paddingBottom="18dp"
+                android:layout_height="wrap_content" />
+            <co.jlabs.famb.fonts.TextView_White
+                android:layout_width="wrap_content"
+                android:text="@string/call"
+                android:layout_centerVertical="true"
+                android:paddingTop="18dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="20sp"
+                android:layout_toLeftOf="@+id/attachment"
+                android:id="@+id/call"
+                android:paddingBottom="18dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius" >
+
+        <RelativeLayout
+            android:id="@+id/relative55"
+            android:padding="10dp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageOption"
+                android:src="@drawable/polloption"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                />
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/imageOption"
+                android:textColor="#537F94"
+                android:text="Which is better, I wanna buy a new Phone guys"
+                />
+
+
+
+            <LinearLayout
+                android:id="@+id/optionLayout"
+                android:orientation="vertical"
+                android:layout_below="@+id/subject"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+      </android.support.v7.widget.CardView>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_view"
+        />
+</RelativeLayout>
+
+
+<!--<RelativeLayout-->
+<!--android:id="@+id/relative2"-->
+<!--android:layout_marginTop="30dp"-->
+<!--android:layout_below="@+id/subject"-->
+<!--android:layout_width="250dp"-->
+<!--android:layout_height="wrap_content">-->
+
+<!--<ProgressBar-->
+    <!--android:id="@+id/progressBar1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--style="?android:attr/progressBarStyleHorizontal"-->
+    <!--android:progressDrawable="@drawable/custom_progressbar"/>-->
+
+<!--</RelativeLayout>-->
+
+<!--<TextView-->
+<!--android:id="@+id/optiontext1"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginTop="30dp"-->
+<!--android:text="Option 1 (5)"-->
+<!--android:layout_below="@+id/subject"-->
+<!--android:textSize="10sp"-->
+<!--android:textColor="#537F94"-->
+<!--android:layout_marginLeft="20dp"-->
+<!--android:layout_toRightOf="@+id/relative2"/>-->
