@@ -39,7 +39,7 @@ import co.jlabs.famb.database.Maindb;
 
 public class Add_Bond extends AppCompatActivity implements View.OnClickListener,ShareInf {
 
-
+//
     private ImageView back;
     private TextView up;
     private TextView ppl_num;
